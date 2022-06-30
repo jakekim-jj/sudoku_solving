@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.6.0.js"></script>
+    <title>Document</title>
+    <style>
+        input {
+            width: 30px;
+            height: 30px;
+            margin: 1%;
+        }
+        div{
+            width:500px;
+            background-color: rgba(153, 205, 75, 0.584);
+            border:1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML should input only from 1~9 -->
+    <!-- We need only one button -->
+    <div>
+        <input id="num00" type="number" min="1" max="9" />
+        <input id="num01" type="number" min="1" max="9" />
+        <input id="num02" type="number" min="1" max="9" />
+        <input id="num03" type="number" min="1" max="9" />
+        <input id="num04" type="number" min="1" max="9" />
+        <input id="num05" type="number" min="1" max="9" />
+        <input id="num06" type="number" min="1" max="9" />
+        <input id="num07" type="number" min="1" max="9" />
+        <input id="num08" type="number" min="1" max="9" />
+    </div>
+    <div>
+        <input id="num10" type="number" min="1" max="9" />
+        <input id="num11" type="number" min="1" max="9" />
+        <input id="num12" type="number" min="1" max="9" />
+        <input id="num13" type="number" min="1" max="9" />
+        <input id="num14" type="number" min="1" max="9" />
+        <input id="num15" type="number" min="1" max="9" />
+        <input id="num16" type="number" min="1" max="9" />
+        <input id="num17" type="number" min="1" max="9" />
+        <input id="num18" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num20" type="number" min="1" max="9" />
+        <input id="num21" type="number" min="1" max="9" />
+        <input id="num22" type="number" min="1" max="9" />
+        <input id="num23" type="number" min="1" max="9" />
+        <input id="num24" type="number" min="1" max="9" />
+        <input id="num25" type="number" min="1" max="9" />
+        <input id="num26" type="number" min="1" max="9" />
+        <input id="num27" type="number" min="1" max="9" />
+        <input id="num28" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num30" type="number" min="1" max="9" />
+        <input id="num31" type="number" min="1" max="9" />
+        <input id="num32" type="number" min="1" max="9" />
+        <input id="num33" type="number" min="1" max="9" />
+        <input id="num34" type="number" min="1" max="9" />
+        <input id="num35" type="number" min="1" max="9" />
+        <input id="num36" type="number" min="1" max="9" />
+        <input id="num37" type="number" min="1" max="9" />
+        <input id="num38" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num40" type="number" min="1" max="9" />
+        <input id="num41" type="number" min="1" max="9" />
+        <input id="num42" type="number" min="1" max="9" />
+        <input id="num43" type="number" min="1" max="9" />
+        <input id="num44" type="number" min="1" max="9" />
+        <input id="num45" type="number" min="1" max="9" />
+        <input id="num46" type="number" min="1" max="9" />
+        <input id="num47" type="number" min="1" max="9" />
+        <input id="num48" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num50" type="number" min="1" max="9" />
+        <input id="num51" type="number" min="1" max="9" />
+        <input id="num52" type="number" min="1" max="9" />
+        <input id="num53" type="number" min="1" max="9" />
+        <input id="num54" type="number" min="1" max="9" />
+        <input id="num55" type="number" min="1" max="9" />
+        <input id="num56" type="number" min="1" max="9" />
+        <input id="num57" type="number" min="1" max="9" />
+        <input id="num58" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num60" type="number" min="1" max="9" />
+        <input id="num61" type="number" min="1" max="9" />
+        <input id="num62" type="number" min="1" max="9" />
+        <input id="num63" type="number" min="1" max="9" />
+        <input id="num64" type="number" min="1" max="9" />
+        <input id="num65" type="number" min="1" max="9" />
+        <input id="num66" type="number" min="1" max="9" />
+        <input id="num67" type="number" min="1" max="9" />
+        <input id="num68" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num70" type="number" min="1" max="9" />
+        <input id="num71" type="number" min="1" max="9" />
+        <input id="num72" type="number" min="1" max="9" />
+        <input id="num73" type="number" min="1" max="9" />
+        <input id="num74" type="number" min="1" max="9" />
+        <input id="num75" type="number" min="1" max="9" />
+        <input id="num76" type="number" min="1" max="9" />
+        <input id="num77" type="number" min="1" max="9" />
+        <input id="num78" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num80" type="number" min="1" max="9" />
+        <input id="num81" type="number" min="1" max="9" />
+        <input id="num82" type="number" min="1" max="9" />
+        <input id="num83" type="number" min="1" max="9" />
+        <input id="num84" type="number" min="1" max="9" />
+        <input id="num85" type="number" min="1" max="9" />
+        <input id="num86" type="number" min="1" max="9" />
+        <input id="num87" type="number" min="1" max="9" />
+        <input id="num88" type="number" min="1" max="9" />
+    </div>
+
+    <button type="button">Give Numbers</button>
+    <button type="button">Validate</button>
+
+
+
+    <h2 id="result"></h2>
+</body>
+<script>
+    
+    var num00 = document.getElementById("num00");
+    var num01 = document.getElementById("num01");
+    var num02 = document.getElementById("num02");
+    var num03 = document.getElementById("num03");
+    var num04 = document.getElementById("num04");
+    var num05 = document.getElementById("num05");
+    var num06 = document.getElementById("num06");
+    var num07 = document.getElementById("num07");
+    var num08 = document.getElementById("num08");
+
+    var num10 = document.getElementById("num10");
+    var num11 = document.getElementById("num11");
+    var num12 = document.getElementById("num12");
+    var num13 = document.getElementById("num13");
+    var num14 = document.getElementById("num14");
+    var num15 = document.getElementById("num15");
+    var num16 = document.getElementById("num16");
+    var num17 = document.getElementById("num17");
+    var num18 = document.getElementById("num18");
+
+    var nun20 = document.getElementById("num20");
+    var num21 = document.getElementById("num21");
+    var num22 = document.getElementById("num22");
+    var num23 = document.getElementById("num23");
+    var num24 = document.getElementById("num24");
+    var num25 = document.getElementById("num25");
+    var num26 = document.getElementById("num26");
+    var num27 = document.getElementById("num27");
+    var num28 = document.getElementById("num28");
+
+    var nun30 = document.getElementById("num30");
+    var num31 = document.getElementById("num31");
+    var num32 = document.getElementById("num32");
+    var num33 = document.getElementById("num33");
+    var num34 = document.getElementById("num34");
+    var num35 = document.getElementById("num35");
+    var num36 = document.getElementById("num36");
+    var num37 = document.getElementById("num37");
+    var num38 = document.getElementById("num38");
+
+    var nun40 = document.getElementById("num40");
+    var num41 = document.getElementById("num41");
+    var num42 = document.getElementById("num42");
+    var num43 = document.getElementById("num43");
+    var num44 = document.getElementById("num44");
+    var num45 = document.getElementById("num45");
+    var num46 = document.getElementById("num46");
+    var num47 = document.getElementById("num47");
+    var num48 = document.getElementById("num48");
+
+    var nun50 = document.getElementById("num50");
+    var num51 = document.getElementById("num51");
+    var num52 = document.getElementById("num52");
+    var num53 = document.getElementById("num53");
+    var num54 = document.getElementById("num54");
+    var num55 = document.getElementById("num55");
+    var num56 = document.getElementById("num56");
+    var num57 = document.getElementById("num57");
+    var num58 = document.getElementById("num58");
+
+    var nun60 = document.getElementById("num60");
+    var num61 = document.getElementById("num61");
+    var num62 = document.getElementById("num62");
+    var num63 = document.getElementById("num63");
+    var num64 = document.getElementById("num64");
+    var num65 = document.getElementById("num65");
+    var num66 = document.getElementById("num66");
+    var num67 = document.getElementById("num67");
+    var num68 = document.getElementById("num68");
+
+    var nun70 = document.getElementById("num70");
+    var num71 = document.getElementById("num71");
+    var num72 = document.getElementById("num72");
+    var num73 = document.getElementById("num73");
+    var num74 = document.getElementById("num74");
+    var num75 = document.getElementById("num75");
+    var num76 = document.getElementById("num76");
+    var num77 = document.getElementById("num77");
+    var num78 = document.getElementById("num78");
+
+    var nun80 = document.getElementById("num80");
+    var num81 = document.getElementById("num81");
+    var num82 = document.getElementById("num82");
+    var num83 = document.getElementById("num83");
+    var num84 = document.getElementById("num84");
+    var num85 = document.getElementById("num85");
+    var num86 = document.getElementById("num86");
+    var num87 = document.getElementById("num87");
+    var num88 = document.getElementById("num88");
+
+
+    let validate_btn = document.getElementsByTagName("button")[1];
+
+    validate_btn.addEventListener('click', function () {
+        board = [
+            // 9 7 2 5 6 3 8 1 4
+            // [9, 9, 2, 5, 6, 3, 8, 1, 4],
+            // [5, 1, 3, 8, 7, 4, 6, 9, 2],
+            // [8, 4, 6, 9, 1, 2, 3, 5, 7],
+            // [3, 8, 5, 2, 9, 6, 7, 4, 1],
+            // [6, 2, 1, 3, 4, 7, 9, 8, 5],
+            // [4, 9, 7, 1, 5, 8, 2, 3, 6],
+            // [7, 3, 8, 4, 2, 1, 5, 6, 9],
+            // [1, 6, 9, 7, 8, 5, 4, 2, 3],
+            // [2, 5, 4, 6, 3, 9, 1, 7, 8]
+
+            [num00.value, num01.value, num02.value, num03.value, num04.value, num05.value, num06.value, num07.value, num08.value],
+            [num10.value, num11.value, num12.value, num13.value, num14.value, num15.value, num16.value, num17.value, num18.value],
+            [8, 4, 6, 9, 1, 2, 3, 5, 7],
+            [3, 8, 5, 2, 9, 6, 7, 4, 1],
+            [6, 2, 1, 3, 4, 7, 9, 8, 5],
+            [4, 9, 7, 1, 5, 8, 2, 3, 6],
+            [7, 3, 8, 4, 2, 1, 5, 6, 9],
+            [1, 6, 9, 7, 8, 5, 4, 2, 3],
+            [2, 5, 4, 6, 3, 9, 1, 7, 8]
+        ];
+
+        // Parse board Array to Integer
+        board = board.map(function(board) {
+            return [ Number(board[0]), Number(board[1]), Number(board[2])
+                    ,Number(board[3]), Number(board[4]), Number(board[5])
+                    ,Number(board[6]), Number(board[7]), Number(board[8])];
+        });
+
+        console.log(board);
+
+        let result = document.getElementById("result")[0];
+        SudokuValid(board);
+
+        function SudokuValid(board) {
+
+            const set = new Set();
+
+            for (let i = 0; i < board.length; i++) {
+                for (let j = 0; j < board.length; j++) {
+                    const value = board[i][j];
+
+                    //Check the value less than 0 or bigger than 9
+                    if(board[i][j] == 0 || board[i][j]>9){
+                        alert("All Value must be between 0 to 9");
+                    }
+
+                    // if (value == ".") {
+                    //     document.write("EMPTY!!");
+                    // }
+
+                    const boxIdx = Math.floor(i / 3) * 3 + Math.floor(j / 3);
+
+
+                    const row = `row: ${i}, value ${value}`;
+                    const column = `column: ${j}, value ${value}`;
+                    const box = `box: ${boxIdx}, value ${value}`;
+
+
+                    if (set.has(row) || set.has(column) || set.has(box)) {
+                        return $('h2').text("wrong!!");
+                    }
+
+                    set.add(row);
+                    set.add(column);
+                    set.add(box);
+                }
+            }
+            // alert("correct");
+            $('h2').text("Correct!!");
+        }
+
+
+    })
+
+
+
+
+</script>
+
+</html>
