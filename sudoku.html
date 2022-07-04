@@ -6,136 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./jquery-3.6.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-    <style>
-        input {
-            width: 30px;
-            height: 30px;
-            margin: 1%;
-        }
-        div{
-            width:500px;
-            background-color: rgba(153, 205, 75, 0.584);
-            border:1px solid blue;
-        }
-    </style>
 </head>
-
 <body>
     <!-- HTML should input only from 1~9 -->
     <!-- We need only one button -->
-    <div>
-        <input id="num00" type="number" min="1" max="9" />
-        <input id="num01" type="number" min="1" max="9" />
-        <input id="num02" type="number" min="1" max="9" />
-        <input id="num03" type="number" min="1" max="9" />
-        <input id="num04" type="number" min="1" max="9" />
-        <input id="num05" type="number" min="1" max="9" />
-        <input id="num06" type="number" min="1" max="9" />
-        <input id="num07" type="number" min="1" max="9" />
-        <input id="num08" type="number" min="1" max="9" />
-    </div>
-    <div>
-        <input id="num10" type="number" min="1" max="9" />
-        <input id="num11" type="number" min="1" max="9" />
-        <input id="num12" type="number" min="1" max="9" />
-        <input id="num13" type="number" min="1" max="9" />
-        <input id="num14" type="number" min="1" max="9" />
-        <input id="num15" type="number" min="1" max="9" />
-        <input id="num16" type="number" min="1" max="9" />
-        <input id="num17" type="number" min="1" max="9" />
-        <input id="num18" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num20" type="number" min="1" max="9" />
-        <input id="num21" type="number" min="1" max="9" />
-        <input id="num22" type="number" min="1" max="9" />
-        <input id="num23" type="number" min="1" max="9" />
-        <input id="num24" type="number" min="1" max="9" />
-        <input id="num25" type="number" min="1" max="9" />
-        <input id="num26" type="number" min="1" max="9" />
-        <input id="num27" type="number" min="1" max="9" />
-        <input id="num28" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num30" type="number" min="1" max="9" />
-        <input id="num31" type="number" min="1" max="9" />
-        <input id="num32" type="number" min="1" max="9" />
-        <input id="num33" type="number" min="1" max="9" />
-        <input id="num34" type="number" min="1" max="9" />
-        <input id="num35" type="number" min="1" max="9" />
-        <input id="num36" type="number" min="1" max="9" />
-        <input id="num37" type="number" min="1" max="9" />
-        <input id="num38" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num40" type="number" min="1" max="9" />
-        <input id="num41" type="number" min="1" max="9" />
-        <input id="num42" type="number" min="1" max="9" />
-        <input id="num43" type="number" min="1" max="9" />
-        <input id="num44" type="number" min="1" max="9" />
-        <input id="num45" type="number" min="1" max="9" />
-        <input id="num46" type="number" min="1" max="9" />
-        <input id="num47" type="number" min="1" max="9" />
-        <input id="num48" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num50" type="number" min="1" max="9" />
-        <input id="num51" type="number" min="1" max="9" />
-        <input id="num52" type="number" min="1" max="9" />
-        <input id="num53" type="number" min="1" max="9" />
-        <input id="num54" type="number" min="1" max="9" />
-        <input id="num55" type="number" min="1" max="9" />
-        <input id="num56" type="number" min="1" max="9" />
-        <input id="num57" type="number" min="1" max="9" />
-        <input id="num58" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num60" type="number" min="1" max="9" />
-        <input id="num61" type="number" min="1" max="9" />
-        <input id="num62" type="number" min="1" max="9" />
-        <input id="num63" type="number" min="1" max="9" />
-        <input id="num64" type="number" min="1" max="9" />
-        <input id="num65" type="number" min="1" max="9" />
-        <input id="num66" type="number" min="1" max="9" />
-        <input id="num67" type="number" min="1" max="9" />
-        <input id="num68" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num70" type="number" min="1" max="9" />
-        <input id="num71" type="number" min="1" max="9" />
-        <input id="num72" type="number" min="1" max="9" />
-        <input id="num73" type="number" min="1" max="9" />
-        <input id="num74" type="number" min="1" max="9" />
-        <input id="num75" type="number" min="1" max="9" />
-        <input id="num76" type="number" min="1" max="9" />
-        <input id="num77" type="number" min="1" max="9" />
-        <input id="num78" type="number" min="1" max="9" />
-    </div>
-
-    <div>
-        <input id="num80" type="number" min="1" max="9" />
-        <input id="num81" type="number" min="1" max="9" />
-        <input id="num82" type="number" min="1" max="9" />
-        <input id="num83" type="number" min="1" max="9" />
-        <input id="num84" type="number" min="1" max="9" />
-        <input id="num85" type="number" min="1" max="9" />
-        <input id="num86" type="number" min="1" max="9" />
-        <input id="num87" type="number" min="1" max="9" />
-        <input id="num88" type="number" min="1" max="9" />
-    </div>
-
-    <button type="button">Give Numbers</button>
-    <button type="button">Validate</button>
-
+    <h1>SUDOKU</h1>
+    <hr>
     <h2 id="result"></h2>
+    <div>
+        <input id="num00" class="tile" type="number" min="1" max="9" />
+        <input id="num01" class="tile" type="number" min="1" max="9" />
+        <input id="num02" class="tile" type="number" min="1" max="9" />
+        <input id="num03" class="tile" type="number" min="1" max="9" />
+        <input id="num04" class="tile" type="number" min="1" max="9" />
+        <input id="num05" class="tile" type="number" min="1" max="9" />
+        <input id="num06" class="tile" type="number" min="1" max="9" />
+        <input id="num07" class="tile" type="number" min="1" max="9" />
+        <input id="num08" class="tile" type="number" min="1" max="9" />
+    </div>
+    <div>
+        <input id="num10" class="tile" type="number" min="1" max="9" />
+        <input id="num11" class="tile" type="number" min="1" max="9" />
+        <input id="num12" class="tile" type="number" min="1" max="9" />
+        <input id="num13" class="tile" type="number" min="1" max="9" />
+        <input id="num14" class="tile" type="number" min="1" max="9" />
+        <input id="num15" class="tile" type="number" min="1" max="9" />
+        <input id="num16" class="tile" type="number" min="1" max="9" />
+        <input id="num17" class="tile" type="number" min="1" max="9" />
+        <input id="num18" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num20" class="tile" type="number" min="1" max="9" />
+        <input id="num21" class="tile" type="number" min="1" max="9" />
+        <input id="num22" class="tile" type="number" min="1" max="9" />
+        <input id="num23" class="tile" type="number" min="1" max="9" />
+        <input id="num24" class="tile" type="number" min="1" max="9" />
+        <input id="num25" class="tile" type="number" min="1" max="9" />
+        <input id="num26" class="tile" type="number" min="1" max="9" />
+        <input id="num27" class="tile" type="number" min="1" max="9" />
+        <input id="num28" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num30" class="tile" type="number" min="1" max="9" />
+        <input id="num31" class="tile" type="number" min="1" max="9" />
+        <input id="num32" class="tile" type="number" min="1" max="9" />
+        <input id="num33" class="tile" type="number" min="1" max="9" />
+        <input id="num34" class="tile" type="number" min="1" max="9" />
+        <input id="num35" class="tile" type="number" min="1" max="9" />
+        <input id="num36" class="tile" type="number" min="1" max="9" />
+        <input id="num37" class="tile" type="number" min="1" max="9" />
+        <input id="num38" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num40" class="tile" type="number" min="1" max="9" />
+        <input id="num41" class="tile" type="number" min="1" max="9" />
+        <input id="num42" class="tile" type="number" min="1" max="9" />
+        <input id="num43" class="tile" type="number" min="1" max="9" />
+        <input id="num44" class="tile" type="number" min="1" max="9" />
+        <input id="num45" class="tile" type="number" min="1" max="9" />
+        <input id="num46" class="tile" type="number" min="1" max="9" />
+        <input id="num47" class="tile" type="number" min="1" max="9" />
+        <input id="num48" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num50" class="tile" type="number" min="1" max="9" />
+        <input id="num51" class="tile" type="number" min="1" max="9" />
+        <input id="num52" class="tile" type="number" min="1" max="9" />
+        <input id="num53" class="tile" type="number" min="1" max="9" />
+        <input id="num54" class="tile" type="number" min="1" max="9" />
+        <input id="num55" class="tile" type="number" min="1" max="9" />
+        <input id="num56" class="tile" type="number" min="1" max="9" />
+        <input id="num57" class="tile" type="number" min="1" max="9" />
+        <input id="num58" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num60" class="tile" type="number" min="1" max="9" />
+        <input id="num61" class="tile" type="number" min="1" max="9" />
+        <input id="num62" class="tile" type="number" min="1" max="9" />
+        <input id="num63" class="tile" type="number" min="1" max="9" />
+        <input id="num64" class="tile" type="number" min="1" max="9" />
+        <input id="num65" class="tile" type="number" min="1" max="9" />
+        <input id="num66" class="tile" type="number" min="1" max="9" />
+        <input id="num67" class="tile" type="number" min="1" max="9" />
+        <input id="num68" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num70" class="tile" type="number" min="1" max="9" />
+        <input id="num71" class="tile" type="number" min="1" max="9" />
+        <input id="num72" class="tile" type="number" min="1" max="9" />
+        <input id="num73" class="tile" type="number" min="1" max="9" />
+        <input id="num74" class="tile" type="number" min="1" max="9" />
+        <input id="num75" class="tile" type="number" min="1" max="9" />
+        <input id="num76" class="tile" type="number" min="1" max="9" />
+        <input id="num77" class="tile" type="number" min="1" max="9" />
+        <input id="num78" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <div>
+        <input id="num80" class="tile" type="number" min="1" max="9" />
+        <input id="num81" class="tile" type="number" min="1" max="9" />
+        <input id="num82" class="tile" type="number" min="1" max="9" />
+        <input id="num83" class="tile" type="number" min="1" max="9" />
+        <input id="num84" class="tile" type="number" min="1" max="9" />
+        <input id="num85" class="tile" type="number" min="1" max="9" />
+        <input id="num86" class="tile" type="number" min="1" max="9" />
+        <input id="num87" class="tile" type="number" min="1" max="9" />
+        <input id="num88" class="tile" type="number" min="1" max="9" />
+    </div>
+
+    <button type="button" class="btn btn-outline-secondary">Validate</button>
+    
+
+    
 </body>
+
 <script>
     
     var num00 = document.getElementById("num00");
@@ -229,25 +222,15 @@
     var num88 = document.getElementById("num88");
 
 
-    let validate_btn = document.getElementsByTagName("button")[1];
+    let validate_btn = document.getElementsByTagName("button")[0];
 
     validate_btn.addEventListener('click', function () {
 
         // Input Array 
         board = [
             // 9 7 2 5 6 3 8 1 4
-            [9, 7, 2, 5, 6, 3, 8, 11, 4],
-            [5, 1, 3, 8, 7, 4, 6, 9, 2],
-            [8, 4, 6, 9, 1, 2, 3, 5, 7],
-            [3, 8, 5, 2, 9, 6, 7, 4, 1],
-            [6, 2, 1, 3, 4, 7, 9, 8, 5],
-            [4, 9, 7, 1, 5, 8, 2, 3, 6],
-            [7, 3, 8, 4, 2, 1, 5, 6, 9],
-            [1, 6, 9, 7, 8, 5, 4, 2, 3],
-            [2, 5, 4, 6, 3, 9, 1, 7, 8]
-
-            // [num00.value, num01.value, num02.value, num03.value, num04.value, num05.value, num06.value, num07.value, num08.value],
-            // [num10.value, num11.value, num12.value, num13.value, num14.value, num15.value, num16.value, num17.value, num18.value],
+            // [9, 7, 2, 5, 6, 3, 8, 1, 4],
+            // [5, 1, 3, 8, 7, 4, 6, 9, 2],
             // [8, 4, 6, 9, 1, 2, 3, 5, 7],
             // [3, 8, 5, 2, 9, 6, 7, 4, 1],
             // [6, 2, 1, 3, 4, 7, 9, 8, 5],
@@ -255,6 +238,16 @@
             // [7, 3, 8, 4, 2, 1, 5, 6, 9],
             // [1, 6, 9, 7, 8, 5, 4, 2, 3],
             // [2, 5, 4, 6, 3, 9, 1, 7, 8]
+
+            [num00.value, num01.value, num02.value, num03.value, num04.value, num05.value, num06.value, num07.value, num08.value],
+            [num10.value, num11.value, num12.value, num13.value, num14.value, num15.value, num16.value, num17.value, num18.value],
+            [8, 4, 6, 9, 1, 2, 3, 5, 7],
+            [3, 8, 5, 2, 9, 6, 7, 4, 1],
+            [6, 2, 1, 3, 4, 7, 9, 8, 5],
+            [4, 9, 7, 1, 5, 8, 2, 3, 6],
+            [7, 3, 8, 4, 2, 1, 5, 6, 9],
+            [1, 6, 9, 7, 8, 5, 4, 2, 3],
+            [2, 5, 4, 6, 3, 9, 1, 7, 8]
         ];
 
         // Parse board Array to Integer

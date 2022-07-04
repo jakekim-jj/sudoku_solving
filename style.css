@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+h1{
+    margin: 16px;
+    color: #113b49;
+}
+
+hr{
+    margin: auto;
+    width: 469px;
+    color: #113b49;
+}
+
+#result{
+    color: #b73a5c;
+    height: 49px;
+    margin-top: 9px;
+}
+
+div{
+    margin: auto;
+    width:450px;
+    height: 50px;
+    /* border:solid  lightslategray; */
+}
+.tile{
+    width: 45px;
+    height: 48px;
+    border: 1px solid #5b8291;
+    border-radius: 3px;
+    /*text*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b8291;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 43px;
+}
