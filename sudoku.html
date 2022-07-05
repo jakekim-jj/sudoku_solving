@@ -142,12 +142,23 @@
 <script>
     
     var num = $("input");
-    // Add Class Attributes and Class to Number input 
+    // ----- Add Class Attributes and Class to Number input 
+    // Attribute not to input String
     num.attr("patter", "[1-9]+([,\.][1-9]+)?");
-    num.attr("min","1");
-    num.attr("max","9");
-    num.attr("step","any");
+
+    // To limit input number from 1 digit
+    num.attr("maxlength", "1");
+    num.attr("oninput", "numberMaxLength(this);");
+
+    // num.attr("step","any");
     num.addClass("tile");
+
+    //function for limit digit only 1.
+    function numberMaxLength(maxLen){
+        if(maxLen.value.length > maxLen.maxLength){
+            maxLen.value = maxLen.value.slice(0, maxLen.maxLength);
+        }
+    }
 
     // First Button to call Validate function
     let validate_btn = document.getElementsByTagName("button")[0];
