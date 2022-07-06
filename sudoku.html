@@ -165,9 +165,10 @@
     var num = $("input");
     // ----- Add Class Attributes and Class to Number input 
     // Attribute not to input String
-    num.attr("pattern", "[1-9]+([,\.][1-9]+)?");
+   
+    // limit input only numbers
+    num.attr("onkeypress", "return event.charCode >= 48");
 
-    // To limit input number from 1 digit
     num.attr("maxlength", "1");
     num.attr("oninput", "numberMaxLength(this);");
     num.addClass("tile");
