@@ -135,8 +135,23 @@
 
 
     <button type="button" class="btn btn-outline-secondary">Validate</button>
-    <button type="button" class="btn rule_btn">Rules</button>
     <button type="button" class="btn another_num">Another Sudoku</button>
+    <button class="accordion">1# Sudoku Rule</button>
+    <div class="panel">
+        <p>Sudoku Rule № 1: Use only numbers bettewen 1-9 inside of each square.</p>
+    </div>
+    <button class="accordion">2# Sudoku Rule</button>
+    <div class="panel">
+        <p>Sudoku Rule № 2: Don’t Repeat Any Numbers inside the square and next another square.</p>
+    </div>
+    <button class="accordion">3# Sudoku Rules</button>
+    <div class="panel">
+        <p>Sudoku Rule № 3: Don’t Guess,To avoid mistakes you can do it</p>
+    </div>
+    <button class="accordion">4# Sudoku Rules</button>
+    <div class="panel">
+        <p> Sudoku Rule № 4: Use Process of Elimination(analyse the numbers and the game)</p>
+    </div>
 
     
 </body>
@@ -144,10 +159,8 @@
 <script>
     // First Button to call Validate function
     let validate_btn = document.getElementsByTagName("button")[0];
-    // Second Button for Rule of SUDOKU
-    let rule_btn=document.getElementsByTagName("button")[1];
-    // Third Button for showing another number
-    let another_num = document.getElementsByTagName("button")[2];
+    // Second Button for showing another number
+    let another_num = document.getElementsByTagName("button")[1];
     
     var num = $("input");
     // ----- Add Class Attributes and Class to Number input 
@@ -165,11 +178,23 @@
             maxLen.value = maxLen.value.slice(0, maxLen.maxLength);
         }
     }
+
+        var rules = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < rules.length; i++) {
+            rules[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     
-    rule_btn.addEventListener('click',function(){
-        alert("Sudoku Rule № 1: Use Numbers 1-9 inside of each square \n Sudoku Rule № 2: Don’t Repeat Any Numbers inside the square and next another square \n Sudoku Rule № 3: Don’t Guess \n Sudoku Rule № 4: Use Process of Elimination");
-        
-    });
+   
 
     another_num.addEventListener('click', function(){
         $("input").eq(0).attr("value",'6');
