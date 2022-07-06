@@ -133,63 +133,153 @@
         <input id="num88" type="number" value="8" />
     </div>
 
+
     <button type="button" class="btn btn-outline-secondary">Validate</button>
     <button type="button" class="btn rule_btn">Rules</button>
+    <button type="button" class="btn another_num">Another Sudoku</button>
 
     
 </body>
 
 <script>
+    // First Button to call Validate function
+    let validate_btn = document.getElementsByTagName("button")[0];
+    // Second Button for Rule of SUDOKU
+    let rule_btn=document.getElementsByTagName("button")[1];
+    // Third Button for showing another number
+    let another_num = document.getElementsByTagName("button")[2];
     
     var num = $("input");
     // ----- Add Class Attributes and Class to Number input 
     // Attribute not to input String
-    num.attr("patter", "[1-9]+([,\.][1-9]+)?");
+    num.attr("pattern", "[1-9]+([,\.][1-9]+)?");
 
     // To limit input number from 1 digit
     num.attr("maxlength", "1");
     num.attr("oninput", "numberMaxLength(this);");
-
-    // num.attr("step","any");
     num.addClass("tile");
-
+    
     //function for limit digit only 1.
     function numberMaxLength(maxLen){
         if(maxLen.value.length > maxLen.maxLength){
             maxLen.value = maxLen.value.slice(0, maxLen.maxLength);
         }
     }
-
-    // First Button to call Validate function
-    let validate_btn = document.getElementsByTagName("button")[0];
-    // Second Button for Rule of SUDOKU
-    let rule_btn=document.getElementsByTagName("button")[1];
     
     rule_btn.addEventListener('click',function(){
         alert("Sudoku Rule № 1: Use Numbers 1-9 inside of each square \n Sudoku Rule № 2: Don’t Repeat Any Numbers inside the square and next another square \n Sudoku Rule № 3: Don’t Guess \n Sudoku Rule № 4: Use Process of Elimination");
         
     });
 
-    validate_btn.addEventListener('click', function () {
+    another_num.addEventListener('click', function(){
+        $("input").eq(0).attr("value",'6');
+        $("input").eq(1).attr("value",'9');
+        $("input").eq(2).attr("value",'8');
+        $("input").eq(3).attr("value",'2');
+        $("input").eq(4).attr("value",'5');
+        $("input").eq(5).attr("value",'7');
+        $("input").eq(6).attr("value",'1');
+        $("input").eq(7).attr("value",'3');
+        $("input").eq(8).attr("value",'4');
+
+        $("input").eq(9).attr("value",'5');
+        $("input").eq(10).attr("value",'4');
+        $("input").eq(11).attr("value",'2');
+        $("input").eq(12).attr("value",'3');
+        $("input").eq(13).attr("value",'6');
+        $("input").eq(14).attr("value",'1');
+        $("input").eq(15).attr("value",'9');
+        $("input").eq(16).attr("value",'8');
+        $("input").eq(17).attr("value",'7');
+
+        $("input").eq(18).attr("value",'7');
+        $("input").eq(19).attr("value",'1');
+        $("input").eq(20).attr("value",'3');
+        $("input").eq(21).attr("value",'9');
+        $("input").eq(22).attr("value",'4');
+        $("input").eq(23).attr("value",'8');
+        $("input").eq(24).attr("value",'6');
+        $("input").eq(25).attr("value",'5');
+        $("input").eq(26).attr("value",'2');
+
+        $("input").eq(27).attr("value",'9');
+        $("input").eq(28).attr("value",'5');
+        $("input").eq(29).attr("value",'4');
+        $("input").eq(30).attr("value",'7');
+        $("input").eq(31).attr("value",'8');
+        $("input").eq(32).attr("value",'2');
+        $("input").eq(33).attr("value",'3');
+        $("input").eq(34).attr("value",'1');
+        $("input").eq(35).attr("value",'6');
+
+        $("input").eq(36).attr("value",'2');
+        $("input").eq(37).attr("value",'8');
+        $("input").eq(38).attr("value",'6');
+        $("input").eq(39).attr("value",'4');
+        $("input").eq(40).attr("value",'1');
+        $("input").eq(41).attr("value",'3');
+        $("input").eq(42).attr("value",'7');
+        $("input").eq(43).attr("value",'9');
+        $("input").eq(44).attr("value",'5');
+
+        $("input").eq(45).attr("value",'3');
+        $("input").eq(46).attr("value",'7');
+        $("input").eq(47).attr("value",'1');
+        $("input").eq(48).attr("value",'5');
+        $("input").eq(49).attr("value",'9');
+        $("input").eq(50).attr("value",'6');
+        $("input").eq(51).attr("value",'2');
+        $("input").eq(52).attr("value",'4');
+        $("input").eq(53).attr("value",'8');
         
-        // Input Sudoku array 
-        array = [];
-        sudoku = [];
+        $("input").eq(54).attr("value",'8');
+        $("input").eq(55).attr("value",'2');
+        $("input").eq(56).attr("value",'9');
+        $("input").eq(57).attr("value",'6');
+        $("input").eq(58).attr("value",'3');
+        $("input").eq(59).attr("value",'4');
+        $("input").eq(60).attr("value",'5');
+        $("input").eq(61).attr("value",'7');
+        $("input").eq(62).attr("value",'1');
 
-        let input_num = 0;
-        for (let i = 0; i < 9; i++) {
-            for (let j = 0; j < 9; j++) {
-                array.push($('input').eq(input_num).val());
-                input_num++;
+        $("input").eq(63).attr("value",'1');
+        $("input").eq(64).attr("value",'3');
+        $("input").eq(65).attr("value",'7');
+        $("input").eq(66).attr("value",'8');
+        $("input").eq(67).attr("value",'2');
+        $("input").eq(68).attr("value",'5');
+        $("input").eq(69).attr("value",'4');
+        $("input").eq(70).attr("value",'6');
+        $("input").eq(71).attr("value",'9');
 
-                if(input_num % 9 == 0){
-                    sudoku.push(array);   
-                    array= [];  
-                }
-            }     
-        }
-         
+        $("input").eq(72).attr("value",'4');
+        $("input").eq(73).attr("value",'6');
+        $("input").eq(74).attr("value",'5');
+        $("input").eq(75).attr("value",'1');
+        $("input").eq(76).attr("value",'7');
+        $("input").eq(77).attr("value",'9');
+        $("input").eq(78).attr("value",'8');
+        $("input").eq(79).attr("value",'2');
+        $("input").eq(80).attr("value",'2');
 
+        take_sudoku();
+
+        sudoku = sudoku.map(function(sudoku) {
+            return [ Number(sudoku[0]), Number(sudoku[1]), Number(sudoku[2])
+                    ,Number(sudoku[3]), Number(sudoku[4]), Number(sudoku[5])
+                    ,Number(sudoku[6]), Number(sudoku[7]), Number(sudoku[8])];
+        });
+
+        //Call the function.
+        SudokuValid(sudoku);
+        console.log(sudoku);
+    })
+
+    // console.log(sudoku);
+
+    validate_btn.addEventListener('click', function () {
+        take_sudoku();
+        
         // Input Array 
         // sudoku = [
             // 9 7 2 5 6 3 8 1 4
@@ -204,138 +294,124 @@
             // [2, 5, 4, 6, 3, 9, 1, 7, 8]
         // ];
 
-
-        // Parse sudoku Array to Integer
+        // Parse sudoku Array to integer
         sudoku = sudoku.map(function(sudoku) {
             return [ Number(sudoku[0]), Number(sudoku[1]), Number(sudoku[2])
                     ,Number(sudoku[3]), Number(sudoku[4]), Number(sudoku[5])
                     ,Number(sudoku[6]), Number(sudoku[7]), Number(sudoku[8])];
         });
-        console.log(sudoku);
+        console.log(sudoku); // Just checking sudoku is right or not.
 
-
+        //Call the function.
         SudokuValid(sudoku);
+        
+    })
 
-        function SudokuValid(sudoku) {
+    //function for taking sudoku numbers to Array sudoku.
+    function take_sudoku(){
+        array = [];
+        sudoku = [];
+
+        let input_num = 0;
+        for (let i = 0; i < 9; i++) {
+            for (let j = 0; j < 9; j++) {
+                array.push($('input').eq(input_num).val());
+                input_num++;
+                // if array(input_num) is 9, 18 ,27,,push to Final array(sudoku) 
+                // and array will be initialized.
+                if(input_num % 9 == 0){
+                    sudoku.push(array);   
+                    array = [];  
+                }
+            }     
+        }
+    }
+
+    function SudokuValid(sudoku) {
 
             if (validateColumn(sudoku) && validateRow(sudoku) && validateBox(sudoku)) {
                 return $('h2').text("Correct!!");
-            }else {
+            } else {
                 return $('h2').text("Wrong!!");
             }
 
-            // const set = new Set();
-
-            // for (let i = 0; i < sudoku.length; i++) {
-            //     for (let j = 0; j < sudoku.length; j++) {
-            //         const value = sudoku[i][j];
-
-            //         //Check the value less than 0 or bigger than 9
-            //         if(sudoku[i][j] == 0 || sudoku[i][j]>9){
-            //             alert("All Value must be between 0 to 9");
-            //         }
-
-            //         // if (value == ".") {
-            //         //     document.write("EMPTY!!");
-            //         // }
-                    
-
-            //         if (validateRow(sudoku)) {
-
-            //         }
-
-            //         const boxIdx = Math.floor(i / 3) * 3 + Math.floor(j / 3);
-            //         const row = `row: ${i}, value ${value}`;
-            //         const column = `column: ${j}, value ${value}`;
-            //         const box = `box: ${boxIdx}, value ${value}`;
-
-
-            //         if (set.has(row) || set.has(column) || set.has(box)) {
-            //             return $('h2').text("wrong!!");
-            //         }
-
-            //         set.add(row);
-            //         set.add(column);
-            //         set.add(box);
-            //     }
-            // }
-            // // alert("correct");
-            // $('h2').text("Correct!!");
         }
 
-        function validateColumn(sudoku) {
-            for (let i = 0; i < sudoku.length; i++) {
-                const set = new Set();
+    //function for validate Column
+    function validateColumn(sudoku) {
+        for (let i = 0; i < sudoku.length; i++) {
+            const column = new Set();
 
-                for (let j = 0; j < sudoku.length; j++) {
-                    let value = sudoku[i][j];
-                    set.add(value);
-
+            // value of sudoku[i][0]~ sudoku[i][9] in column
+            for (let j = 0; j < sudoku.length; j++) {
+                let value = sudoku[i][j];
+                column.add(value);
+            }
+                    // Compare column with J(1~9)
+                    // IF there are numbers(1~9) will pass or not / return false;
+            for (let j = 1; j < 10; j++) {
+                if (column.has(j)) {
+                //pass
+                }else {
+                    return false;
                 }
+            }
+        }
+        return true;
+    }
+    //function for validate Row
+    function validateRow(sudoku) {
+        for (let i = 0; i < sudoku.length; i++) {
+            const row = new Set();
 
+            // value of sudoku[0][i]~ sudoku[9][i] in column
+            for (let j = 0; j < sudoku.length; j++) {
+                let value = sudoku[j][i];
+                row.add(value);
+            }
+
+            // Compare row with J(1~9)
+            // IF there are numbers(1~9) will pass or not / return false;
+            for (let j = 1; j < 10; j++) {
+                if (row.has(j)) {
+                    //pass
+                } else {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    //function for validate Box
+    function validateBox(sudoku) {
+        for (let Colbox = 0; Colbox < 3; Colbox++) {
+            for (let Rowbox = 0; Rowbox < 3; Rowbox++) {
+
+                // Start of Validate one box
+                // set the box 
+                const box = new Set();
+                for (let i = Colbox * 3; i < 3 + Colbox * 3; i++) {
+                    for (let j = Rowbox * 3; j < 3 + Rowbox * 3; j++) {
+                        let value = sudoku[i][j];
+                        box.add(value);
+                    }
+                }
+                //Validate whether there are right numbers or not
                 for (let j = 1; j < 10; j++) {
-                    if(set.has(j)) {
+                    if (box.has(j)) {
                         //pass
                     } else {
                         return false;
                     }
                 }
+                // End of Validate one box
             }
-            return true;
         }
-
-        function validateRow(sudoku) {
-            for (let i = 0; i < sudoku.length; i++) {
-                const set = new Set();
-
-                for (let j = 0; j < sudoku.length; j++) {
-                    let value = sudoku[j][i];
-                    set.add(value);
-                }
-
-                for (let j = 1; j < 10; j++) {
-                    if(set.has(j)) {
-                        //pass
-                    } else {
-                        return false;
-                    }
-                }
-            }
-            return true;
-        }
-
-        function validateBox(sudoku) {
-
-            for (let Colbox = 0; Colbox < 3; Colbox++) {
-                for (let Rowbox = 0; Rowbox < 3; Rowbox++) {
-
-                    // Start of Validate one box
-                    const set = new Set();
-                    for (let i = Colbox*3; i < 3 + Colbox*3; i++) {
-                        for (let j = Rowbox*3; j < 3 + Rowbox*3; j++) {
-                            let value = sudoku[i][j];
-                            set.add(value);
-                        }
-                    }
-                    
-
-                    for (let j = 1; j < 10; j++) {
-                        if(set.has(j)) {
-                            //pass
-                        } else {
-                            return false;
-                        }
-                    }
-                    // End of Validate one box
-                }
-            }
-            
-                
-            return true;
-        }
+        return true;
+    }
 
 
-    })
 
 
 
