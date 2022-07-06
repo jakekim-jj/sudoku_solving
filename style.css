@@ -53,6 +53,19 @@ div{
     width:450px;
     height: 50px;
 }
+div > input:nth-child(3n){
+    border-right: 4px solid #000000;
+    
+}
+div > input:nth-child(3n+1){
+    border-left: 4px solid #000000;
+}
+div:nth-child(3n+1) > input:nth-child(n){
+    border-top: 4px solid #000000;
+}
+div:nth-child(3n) > input:nth-child(n){
+    border-bottom: 4px solid #000000;
+}
 .tile{
     width: 45px;
     height: 48px;
