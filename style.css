@@ -2,6 +2,27 @@
     padding: 0;
     margin: 0;
 }
+.accordion {
+    background-color: #113b49;
+    color: yellow;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(46, 120, 181);
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
@@ -45,5 +66,7 @@ div{
 }
 
 .btn{
-    margin-top: 43px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 20%;
 }
